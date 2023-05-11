@@ -3,10 +3,12 @@ const app = express();
 require("./db")
 const cors=require("cors");
 const batchModel = require("./batch")
-app.get("/get",async(req,res)=>{
+
+async function getData (){
     const response = await batchModel.find()
-    res.status(200).json({"response":response})
-})
+    console.log(response)
+}
+getData()
 
 app.listen(3000,()=>{
     console.log("running on port 3000")
