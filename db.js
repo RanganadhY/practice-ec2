@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://dev-test:xp62Papx6ujb1nsU@veots-cluster0.urbh6.mongodb.net/?retryWrites=true&w=majority", {
+mongoose.connect("mongodb://dev-test:1234567890@veots-cluster0-shard-00-00.urbh6.mongodb.net:27017,veots-cluster0-shard-00-01.urbh6.mongodb.net:27017,veots-cluster0-shard-00-02.urbh6.mongodb.net:27017/?ssl=true&replicaSet=atlas-5momgr-shard-0&authSource=admin&retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });

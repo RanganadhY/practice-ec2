@@ -8,7 +8,7 @@ async function getData (){
     const response = await batchModel.find()
     console.log(response)
 }
-getData()
+getData()   
 
 app.listen(3000,()=>{
     console.log("running on port 3000")
